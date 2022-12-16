@@ -1,0 +1,382 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background-image: url("images/beachpattern.png");
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-image: url("images/talasi.png");
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.brodic {
+    top: 25px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
+    animation: brodic 10s linear 0s infinite;
+}
+
+@keyframes brodic {
+    0% {
+        left: -10%;
+        transform: rotate(-2deg);
+    }
+
+    10% {
+        top: 35px;
+        transform: rotate(4deg);
+    }
+
+    20% {
+        top: 25px;
+        transform: rotate(-4deg);
+    }
+
+    30% {
+        top: 35px;
+        transform: rotate(4deg);
+    }
+
+    40% {
+        top: 25px;
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        top: 35px;
+        transform: rotate(4deg);
+    }
+
+    60% {
+        top: 25px;
+        transform: rotate(-4deg);
+    }
+
+    70% {
+        top: 35px;
+        transform: rotate(4deg);
+    }
+
+    80% {
+        top: 25px;
+        transform: rotate(-4deg);
+    }
+
+    90% {
+        top: 35px;
+        transform: rotate(4deg);
+    }
+
+    100% {
+        left: 100%;
+        transform: rotate(-4deg);
+        top: 25px;
+    }
+}
+
+#brandwrapper {
+    margin: 5px;
+    align-self: center;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header h4 {
+    margin: 10px;
+}
+
+header .logowrap {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-self: center;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 10px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li:hover {
+    border-bottom: solid black 2px;
+}
+
+main {
+    width: 60%;
+    background-color: azure;
+    margin: auto;
+    margin-top: 130px;
+    box-shadow: 2px 2px lightblue;
+}
+
+.indexcontentwrapper {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.ponudawrapper {
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.ponuda {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid gray;
+    background-color: floralwhite;
+    display: block;
+    box-shadow: 2px 2px gray;
+    transition: 0.3s;
+}
+
+.ponuda .imagecontainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+}
+
+.ponuda img {
+    max-height: 100%;
+    margin: auto;
+}
+
+.ponudatekst {
+    display: block;
+    height: 50%;
+    transition: 0.3s;
+}
+
+.ponudatekst h1 {
+    text-align: center;
+    height: 20%;
+    transition: 0.3s;
+}
+
+.ponudatekst h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.ponudatekst h1 a:hover {
+    text-decoration: underline;
+}
+
+.ponudatekst p {
+    text-align: justify;
+    margin: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 57%;
+    transition: 0.3s;
+}
+
+main.o-nama {
+    height: 400px;
+    padding: 10px;
+}
+
+main.o-nama h3 {
+    margin-bottom: 40px;
+}
+
+main.o-nama p {
+    margin-bottom: 50px;
+}
+
+.formwrap {
+    display: flex;
+}
+
+.kontaktforma {
+    margin: auto;
+    display: block;
+}
+
+.kontaktforma * {
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: floralwhite;
+}
+
+.kontaktforma textarea {
+    height: 300px;
+    width: 100%;
+    resize: none;
+}
+
+.h1wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.h1wrap h1 {
+    margin: auto;
+}
+
+button {
+    border: solid black 1px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+textarea {
+    border: solid black 1px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input {
+    border: solid black 1px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+select {
+    border: solid black 1px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width:420px) {
+    header {
+        height: auto;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-image: none;
+        background-color: lightblue;
+        display: block;
+        padding: 5px;
+    }
+
+    #logowrap {
+        display: flex;
+        width: 100%;
+    }
+
+    #logo {
+        height: 100px;
+        z-index: 1;
+        margin: auto;
+        margin-right: 5px;
+    }
+
+    #logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #brandwrapper {
+        margin: auto;
+        margin-left: 5px;
+    }
+
+    .brodic {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar ul {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .ponuda:hover {
+        transform: scale(1.1);
+    }
+
+    .ponuda:hover .imagecontainer {
+        height: 70%;
+    }
+
+    .ponuda:hover .ponudatekst {
+        height: 30%;
+    }
+
+    .ponuda:hover .ponudatekst h1 {
+        margin-top: 0px;
+        height: 10%;
+    }
+
+    .ponuda:hover .ponudatekst p {
+        margin-top: 20px;
+        font-size: small;
+        height: 72%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    main {
+        width: 95%;
+    }
+
+    .indexcontentwrapper {
+        width: 90%;
+        margin: auto;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .ponudawrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    main.o-nama {
+        height: auto;
+    }
+}

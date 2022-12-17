@@ -179,6 +179,7 @@ main {
     width: 100%;
     display: flex;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .ponuda img {
@@ -296,7 +297,7 @@ select {
         display: block;
         padding: 5px;
     }
-
+    
     #logowrap {
         display: flex;
         width: 100%;
@@ -328,9 +329,6 @@ select {
         display: flex;
     }
 
-    .navbar ul {
-        margin: auto;
-    }
 }
 
 @media screen and (min-width:990px) {
@@ -399,5 +397,8 @@ select {
     
     main.o-nama {
         height: auto;
+    }
+    .navbar ul {
+        margin: auto;
     }
 }

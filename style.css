@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    margin: 1px;
+    margin: 0px;
     background-image: url("images/beachpattern.png");
 }
 
@@ -361,6 +361,7 @@ select {
 @media screen and (max-width:990px) {
     main {
         width: 95%;
+        margin-top: calc(--header-height);
     }
 
     .indexcontentwrapper {
@@ -375,7 +376,27 @@ select {
         margin-bottom: 10px;
         height: auto;
     }
-
+    .ponuda {
+        height: auto;
+    }
+    .ponuda .imagecontainer {
+        width: 100%;
+        height: auto;
+    }
+    .ponuda img{
+        width: 60%;
+        margin:auto;
+    }
+    .ponudatekst p{
+        height: auto;
+    }
+    .ponudatekst h1{
+        height: auto;
+    }
+    .ponudatekst{
+        height: auto;
+    }
+    
     main.o-nama {
         height: auto;
     }
